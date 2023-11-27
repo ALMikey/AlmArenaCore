@@ -1,0 +1,17 @@
+name: AlmArenaCore
+version: '${project.version}'
+main: org.almrealm.almarenacore.AlmArenaCore
+api-version: '1.20'
+author: ALMikey
+description: "ALMikey's plugin..."
+website: https://afdian.net/a/ALMikey
+softdepend:
+  - PlaceholderAPI
+  - Vault
+commands:
+  almarenacore:
+    description: "unknown..."
+    usage: "/almarenacore [command]"
+    aliases: [ almac ]
+    permission: almarenacore.command.use
+    permission-message: "&cYou do not have permission to use."
