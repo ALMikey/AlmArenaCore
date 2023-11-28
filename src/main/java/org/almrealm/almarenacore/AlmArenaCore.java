@@ -1,29 +1,29 @@
 package org.almrealm.almarenacore;
 
-import org.bukkit.Bukkit;
-import org.bukkit.event.Listener;
+import org.almrealm.almarenacore.command.AdminCommand;
+import org.almrealm.almarenacore.listener.PlayerKillListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class AlmArenaCore extends JavaPlugin implements Listener {
+public final class AlmArenaCore extends JavaPlugin {
 
-
-
-    @Override
     public void onLoad() {
         getLogger().info("Loading...");
     }
 
     @Override
     public void onEnable() {
-        getLogger().info("Welcome to use!!");
-        saveResource("config.yml", false);
+        getLogger().info("Welcome to use！！");
         saveDefaultConfig();
 
-//        Bukkit.getCommandMap().register(this.getName(),);
+        getServer().getPluginManager().registerEvents(new PlayerKillListener(),this);
+
+        getServer().getPluginCommand("almarenacore").setExecutor(new AdminCommand());
+
     }
 
     @Override
     public void onDisable() {
         getLogger().info("Hey Goodbye/~");
+
     }
 }

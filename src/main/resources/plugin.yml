@@ -3,7 +3,7 @@ version: '${project.version}'
 main: org.almrealm.almarenacore.AlmArenaCore
 api-version: '1.20'
 author: ALMikey
-description: "ALMikey's plugin..."
+description: Plug-in from ALMikey author!
 website: https://afdian.net/a/ALMikey
 softdepend:
   - PlaceholderAPI
