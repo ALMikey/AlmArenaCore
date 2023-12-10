@@ -1,13 +1,7 @@
-# plugins version
-version: 1.0.0
+# Plugins Version
+Version: 1.0.0
+# Language Set
+Language: chinese
 
 # This World Name
-pvpworldname: "world"
-
-# Plugins Message
-message:
-  prefix: "§f[§cAlmArenaCore§f] §7"
-  reload: "插件重载成功!"
-  help: "帮助文档:https://github.com/ALMikey/AlmArenaCore"
-  killplayer: "你击杀了一个玩家..."
-  victimlplayer: "你被一个玩家击杀了..."
+ArenaWorld: "test"

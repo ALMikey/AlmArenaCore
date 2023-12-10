@@ -1,0 +1,4 @@
+messages:
+  prefix: "[AlmArenaCore]"
+  reload: "插件重载成功!"
+  help: "插件帮助文档: https://github.com/ALMikey/AlmArenaCore"

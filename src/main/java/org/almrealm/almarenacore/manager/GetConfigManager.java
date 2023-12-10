@@ -36,26 +36,13 @@ public class GetConfigManager {
     }
 
     // 获取配置文件内容
-    public String getVersion() {
-        return getString("version");
+    public String getConfigVersion() { return getString("Version"); }
+    public String getConfigLanguage() {
+        return getString("Language");
     }
-    public String getPvpWorldName() {
-        return getString("pvpworldname");
+    public String getConfigArenaWorld() {
+        return getString("ArenaWorld");
     }
-    public String getPrefix() {
-        return getString("message.prefix");
-    }
-    public String getReloadMessage() {
-        return getString("message.reload");
-    }
-    public String getHelp() {
-        return getString("message.help");
-    }
-    public String getkillplayer() {
-        return getString("message.killplayer");
-    }
-    public String getvictimlplayer() {
-        return getString("message.victimlplayer");
-    }
+
 
 }

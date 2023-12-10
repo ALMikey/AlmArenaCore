@@ -17,6 +17,7 @@ public final class AlmArenaCore extends JavaPlugin {
     public void onEnable() {
         getLogger().info("Welcome to use！！");
         saveDefaultConfig();
+        saveResource("messages/chinese.yml",false);
 
         // 初始化 GetConfigManager.java 实例
         gcm = new GetConfigManager(this);

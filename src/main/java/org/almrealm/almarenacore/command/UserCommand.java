@@ -22,16 +22,16 @@ public class UserCommand implements CommandExecutor, TabExecutor {
 
         if (args.length < 1 ) return false;
         if (args[0].equalsIgnoreCase("version")){
-            sender.sendMessage(gcm.getPrefix()+"插件版本为:"+gcm.getVersion());
+            sender.sendMessage("插件版本为: "+gcm.getConfigVersion());
             return true;
         }
         if (args[0].equalsIgnoreCase("reload")){
             plugin.reloadConfig();
-            sender.sendMessage(gcm.getPrefix()+gcm.getReloadMessage());
+            sender.sendMessage("null");
             return true;
         }
         if (args[0].equalsIgnoreCase("help")){
-            sender.sendMessage(gcm.getHelp());
+            sender.sendMessage("null");
             return true;
         }
         return false;
