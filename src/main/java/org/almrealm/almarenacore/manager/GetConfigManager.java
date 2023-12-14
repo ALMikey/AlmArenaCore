@@ -37,12 +37,8 @@ public class GetConfigManager {
 
     // 获取配置文件内容
     public String getConfigVersion() { return getString("Version"); }
-    public String getConfigLanguage() {
-        return getString("Language");
-    }
-    public String getConfigArenaWorld() {
-        return getString("ArenaWorld");
-    }
+    public String getConfigLanguage() { return getString("Language"); }
+    public String getConfigArenaWorld() { return getString("ArenaWorld"); }
 
 
 }

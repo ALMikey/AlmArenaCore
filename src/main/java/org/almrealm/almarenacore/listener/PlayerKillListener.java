@@ -2,6 +2,7 @@ package org.almrealm.almarenacore.listener;
 
 import org.almrealm.almarenacore.AlmArenaCore;
 import org.almrealm.almarenacore.manager.GetConfigManager;
+import org.almrealm.almarenacore.manager.GetMessagesManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -14,6 +15,7 @@ public class PlayerKillListener implements Listener {
     public void onPlayerDeath(PlayerDeathEvent event) {
 
         GetConfigManager gcm = new GetConfigManager(plugin);
+        GetMessagesManager gmm = new GetMessagesManager(plugin);
         String ArenaWorld = gcm.getConfigArenaWorld();
 
         Player victim = event.getEntity();

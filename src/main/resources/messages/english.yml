@@ -1,0 +1,4 @@
+messages:
+  prefix: "[AlmArenaCore]"
+  reload: "successfully reloaded!"
+  help: "Document: https://github.com/ALMikey/AlmArenCore"
