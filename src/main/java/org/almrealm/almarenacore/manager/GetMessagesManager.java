@@ -22,8 +22,10 @@ public class GetMessagesManager {
 //        return YamlConfiguration.loadConfiguration(messageFile);
 //    }
     public void getMessage(){
+        // 声明 GetConfigManager 类 用于获取 gcm.getConfigLanguage();
         GetConfigManager gcm = new GetConfigManager(plugin);
         String Language = gcm.getConfigLanguage();
+        // 语言切换模块
         File messageFile = new File(plugin.getDataFolder(), "messages/"+Language+".yml");
         messagesConfig = YamlConfiguration.loadConfiguration(messageFile);
     }

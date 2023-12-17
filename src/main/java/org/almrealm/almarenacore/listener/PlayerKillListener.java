@@ -15,7 +15,6 @@ public class PlayerKillListener implements Listener {
     public void onPlayerDeath(PlayerDeathEvent event) {
 
         GetConfigManager gcm = new GetConfigManager(plugin);
-        GetMessagesManager gmm = new GetMessagesManager(plugin);
         String ArenaWorld = gcm.getConfigArenaWorld();
 
         Player victim = event.getEntity();
@@ -27,7 +26,9 @@ public class PlayerKillListener implements Listener {
     }
 
     private void sendKillMessage(Player killer, Player victim) {
+        GetMessagesManager gmm = new GetMessagesManager(plugin);
         // 在这里编写发送提示信息的逻辑
-        killer.sendMessage("Yes");
+        killer.sendMessage(gmm.getMsg("kill-player"));
+        victim.sendMessage(gmm.getMsg("killed-by-player"));
     }
 }

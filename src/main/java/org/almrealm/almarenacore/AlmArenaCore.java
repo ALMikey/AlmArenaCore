@@ -4,7 +4,7 @@ import org.almrealm.almarenacore.command.UserCommand;
 import org.almrealm.almarenacore.listener.PlayerKillListener;
 import org.almrealm.almarenacore.manager.GetConfigManager;
 import org.almrealm.almarenacore.manager.GetMessagesManager;
-import org.bukkit.configuration.file.FileConfiguration;
+import org.almrealm.almarenacore.manager.SaveResourceManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class AlmArenaCore extends JavaPlugin {
@@ -19,8 +19,10 @@ public final class AlmArenaCore extends JavaPlugin {
     public void onEnable() {
         getLogger().info("Welcome to use！！");
         saveDefaultConfig();
-        saveResource("messages/chinese.yml",false);
-        saveResource("messages/english.yml",false);
+//        saveResource("messages/chinese.yml",false);
+//        saveResource("messages/english.yml",false);
+        SaveResourceManager saveResourceManager = new SaveResourceManager(this);
+        saveResourceManager.saveFile();
 
         // 初始化 GetConfigManager.java 实例
         gcm = new GetConfigManager(this);

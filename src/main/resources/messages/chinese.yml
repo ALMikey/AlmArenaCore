@@ -2,3 +2,5 @@ messages:
   prefix: "[AlmArenaCore]"
   reload: "插件重载成功!"
   help: "插件帮助文档: https://github.com/ALMikey/AlmArenCore"
+  kill-player: "§c§已击杀 §f§lAlmikeys"
+  killed-by-player: ""
