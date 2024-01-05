@@ -1,6 +1,9 @@
 messages:
-  prefix: "[AlmArenaCore]"
-  reload: "successfully reloaded!"
-  help: "Document: https://github.com/ALMikey/AlmArenCore"
-  kill-player: ""
-  killed-by-player: ""
+  msg-verison: "1.0"
+  prefix: "&4[&cAlmArenaCore&4]"
+  reload: "&asuccessfully reloaded!"
+  help: "&dDocument: &bhttps://github.com/ALMikey/AlmArenaCore"
+  kill-player: "&c&lYou have been killed by &f&l%player_name%
+  killed-by-player: &c&lAlready killed by &f&l%player_name%"
+
+

@@ -24,7 +24,7 @@ public class UserCommand implements CommandExecutor, TabExecutor {
 
         if (args.length < 1 ) return false;
         if (args[0].equalsIgnoreCase("version")){
-            sender.sendMessage(gmm.getMsg("prefix")+"插件版本为: "+gcm.getConfigVersion());
+            sender.sendMessage(gmm.getMsg("prefix")+gcm.getString("Version"));
             return true;
         }
         if (args[0].equalsIgnoreCase("reload")){

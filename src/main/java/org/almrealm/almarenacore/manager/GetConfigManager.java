@@ -35,10 +35,10 @@ public class GetConfigManager {
         return config.getBoolean(key);
     }
 
-    // 获取配置文件内容
-    public String getConfigVersion() { return getString("Version"); }
-    public String getConfigLanguage() { return getString("Language"); }
-    public String getConfigArenaWorld() { return getString("ArenaWorld"); }
+    // 获取配置文件内容 （弃用）
+    //    public String getConfigVersion() { return getString("Version"); }
+    //    public String getConfigLanguage() { return getString("Language"); }
+    //    public String getConfigArenaWorld() { return getString("ArenaWorld"); }
 
 
 }

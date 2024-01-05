@@ -1,6 +1,13 @@
 messages:
-  prefix: "[AlmArenaCore]"
-  reload: "插件重载成功!"
-  help: "插件帮助文档: https://github.com/ALMikey/AlmArenCore"
-  kill-player: "§c§已击杀 §f§lAlmikeys"
-  killed-by-player: ""
+  msg-verison: "1.0"
+  prefix: "&4[&cAlmArenaCore&4] "
+  reload: "&a插件重载成功!"
+  help: "&d插件帮助文档: &bhttps://github.com/ALMikey/AlmArenaCore"
+  kill-player: "&c&l已击败 &f&l%player_name%"
+  killed-by-player: "&c&l你被 &f&l%player_name% &c&l击败"
+  title:
+    kill-player: "&c你已轻松的击败了 &f%player_name% &c!"
+    killed-by-player: "&c你被可恶的 &f%player_name% &c所击败害!"
+  actionbar:
+    kill-player: "&c轻松的击败!"
+    killed-by-player: "&c啊...好疼...再来!"
